@@ -1,0 +1,46 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+
+  @apply text-black font-bold cursor-pointer text-base lg:text-lg xl:text-xl hidden lg:inline-block uppercase transition hover:text-red-500;
+}
+
+  .nav-link-mobile {
+
+  @apply text-white font-bold cursor-pointer text-xl uppercase transition hover:text-yellow-300;
+}
+
+  .heading {
+    @apply text-center text-[#333] text-[22px] sm:text-[30px] md:text-[38px] font-bold capitalize
+  }
+
+  .destination__h1 {
+    @apply text-black mt-[1rem] text-[20px] text-center font-semibold
+  }
+
+  .destination__p {
+    @apply text-black text-[17px] text-center opacity-70 font-semibold
+  }
+
+  .footer__heading {
+    @apply mb-[1.5rem] text-black text-[20px] font-bold
+  }
+  
+  .footer__link {
+    @apply block mb-[1rem] text-gray-600 text-[16px] hover:text-red-500 transition-all duration-100 w-fit  
+  }
+
+  .footer__icon {
+    @apply w-[2.3rem] h-[2.3rem] flex cursor-pointer items-center justify-center rounded-full hover:opacity-60
+    transition-all duration-200  
+  }
+
+section {
+scroll-margin-top: 5rem;
+}
+
+}
